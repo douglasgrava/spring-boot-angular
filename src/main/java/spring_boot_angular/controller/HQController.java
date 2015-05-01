@@ -25,9 +25,9 @@ public class HQController {
         return repository.findAll();
     }
 
-    @RequestMapping(value = "/hq/salvar", method = RequestMethod.POST)
     @ResponseBody
-    public HQ sakvar(@RequestBody final HQ hq) {
+    @RequestMapping(value = "/hq/salvar", method = RequestMethod.POST)
+    public HQ salvar(@RequestBody final HQ hq) {
         return repository.save(hq);
     }
 
